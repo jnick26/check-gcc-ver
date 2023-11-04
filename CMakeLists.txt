@@ -7,6 +7,7 @@ include(GoogleTest)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXE_LINKER_FLAGS "-L/usr/local/opt/llvm/lib/c++ -Wl,-rpath,/usr/local/opt/llvm/lib/c++")
+set(INSTALL_GTEST OFF)
 
 FetchContent_Declare(
   googletest
